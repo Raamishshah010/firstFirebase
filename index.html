@@ -7,14 +7,39 @@
     <title>First Firebase Class</title>
     <link rel="stylesheet" href="./assets/css/style.css">
 
+        <!-- FIREBASE -->
+
+        <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-storage.js"></script>
 
 </head>
 <body>
 
 
 
+    <div class="inputs">
+
+        <div class="input">
+            <input type="text" id="email" placeholder="Email">
+        </div>
+
+        <div class="input">
+            <input type="text" id="password" placeholder="Password">
+        </div>
+
+        <button onclick="login()">Submit</button>
+
+    </div>
+
+
 
     <script src="./assets/js/index.js"></script>
+    <script src="./assets/api/firebase.js"></script>
+
+    <script src="./assets/api/login.js"></script>
     
 </body>
 </html>
