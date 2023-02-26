@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+body {
+    background-color: #fafafa;
+    font-family: 'Open Sans', sans-serif;
+    padding-inline: 2rem;
+}
+
+.addNewBlog{
+    float: right;
+    color: rgb(140, 0, 255);
+    text-decoration: none;
+    font-weight: 700;
+}
+h1{
+    font-size: 1.5em;
+    color: rgb(140, 0, 255);
+
+}
+.blogs {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.blog {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: .3rem;
+}
+
+.blog h5 {
+    font-size: 2rem;
+    line-height: .2rem;
+    font-family: 'Climate Crisis';
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    color: rgb(140, 0, 255);
+
+}
+
+
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5rem;
+    background-color: #fff;
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    gap: 2rem;
+    transform: translate(-50%, -50%);
+}
+
+input{
+    width: 100%;
+    padding: .6rem 1rem;
+    border: none ;
+    background-color: #fafafa;
+
+}
+textarea{
+    width: 100%;
+    padding: .6rem 1rem;
+    border: none ;
+    background-color: #fafafa;
+
+}
+
+button{
+    width: 100%;
+    padding: .6rem 1rem;
+    border: none ;
+    background-color: rgb(140, 0, 255);
+    color: #fff;
+}
