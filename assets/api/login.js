@@ -15,7 +15,9 @@ function login() {
             .then((userCredential) => {
                 // Signed in
                 var user = userCredential.user;
-                
+
+                localStorage.setItem('userId', user.uid);
+
 
                 window.location.href = '../../home.html';
 
