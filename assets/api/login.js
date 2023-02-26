@@ -9,6 +9,8 @@ function login() {
         window.alert('Please Enter All Fields');
     } else {
 
+        $('#submitBtn').html('Please Wait....')
+
         firebase.auth().signInWithEmailAndPassword(email, password)
             .then((userCredential) => {
                 // Signed in
