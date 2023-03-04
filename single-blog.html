@@ -1,0 +1,47 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home</title>
+
+        <link rel="stylesheet" href="./assets/css/style.css" />
+
+        <!-- FIREBASE -->
+
+        <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-storage.js"></script>
+    </head>
+    <body>
+        <h1>Single Blogs</h1>
+        <a href="./home.html">Back</a>
+
+        <div class="blogs" id="blogs">
+        <!-- <div class="blog">
+                <h5>This is new blog Title</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti maxime nam illo harum voluptatum ipsam cupiditate sed aperiam? Iure officiis sint mollitia dolore, officia nisi minima ducimus nulla. Cumque, quidem.</p>
+            </div> -->
+        </div>
+
+        <div class="form" style="margin-top: 320px">
+        <input type="text" id="blogTitle" placeholder="Enter Blog Title" />
+        <textarea
+            name=""
+            id="blogDescription"
+            cols="30"
+            rows="10"
+            placeholder="Enter Blog Description"></textarea>
+
+        <button onclick="editBlog()">Edit Blog</button>
+        <button class="btnDanger" onclick="deleteBlog()">Delete Blog</button>
+        </div>
+
+        <script src="./assets/api/firebase.js"></script>
+        <script src="./assets/api/single-blog.js"></script>
+    </body>
+    </html>

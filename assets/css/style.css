@@ -81,3 +81,8 @@ button{
     background-color: rgb(140, 0, 255);
     color: #fff;
 }
+
+
+.btnDanger{
+    background-color: crimson
+}

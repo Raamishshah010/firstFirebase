@@ -20,7 +20,8 @@ function addBlog() {
         blogTitle,
         blogDescription,
         date: new Date(),
-        blogId: blogsRef.id
+        blogId: blogsRef.id,
+        userId: userUniqueId
     }
 
     blogsRef.set(data).then(() => {

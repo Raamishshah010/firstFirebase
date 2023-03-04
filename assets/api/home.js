@@ -15,7 +15,7 @@ db.collection('blogs').get().then((data) => {
         `)
     })
 
-
+    
 }).catch((err) => {
     window.alert(err.message)
 });
